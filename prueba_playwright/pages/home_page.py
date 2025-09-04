@@ -14,6 +14,6 @@ class HomePage:
         self.page.get_by_role("link", name=" My Account").click()
         self.page.get_by_role("link", name="Register").click()
 
-    def search_product(self, product: str):
+    def search_product(self, product):
         self.page.get_by_role("textbox", name="Search").fill(product)
         self.page.get_by_role("button", name="").click()
